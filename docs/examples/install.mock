@@ -1,0 +1,5 @@
+# Safe mock recipe example for the current agent executor.
+LOG Preparing install workspace
+WAIT 1
+WRITE_FILE installed\hl.exe|mock game executable
+LOG Mock payload written

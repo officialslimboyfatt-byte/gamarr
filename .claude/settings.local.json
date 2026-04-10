@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dotnet build:*)",
+      "Bash(taskkill:*)",
+      "Bash(dotnet run:*)",
+      "Bash(echo \"Started in background, PID: $!\")",
+      "Bash(curl -s http://localhost:5000/health/live)",
+      "Bash(curl -s http://localhost:5000/swagger/v1/swagger.json)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('\\\\n'.join\\(sorted\\(d['paths'].keys\\(\\)\\)\\)\\)\")",
+      "Bash(curl -s \"http://localhost:5000/swagger/v1/swagger.json\")",
+      "Bash(node -e \"const d=require\\('fs'\\).readFileSync\\('/dev/stdin','utf8'\\); const p=JSON.parse\\(d\\).paths; console.log\\(Object.keys\\(p\\).filter\\(k=>k.includes\\('jobs'\\)||k.includes\\('scans'\\)\\).sort\\(\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(curl -s \"http://localhost:5000/swagger/v1/swagger.json\" -o /tmp/swagger.json)",
+      "Bash(node -e \"const p=JSON.parse\\(require\\('fs'\\).readFileSync\\('/tmp/swagger.json','utf8'\\)\\).paths; console.log\\(Object.keys\\(p\\).filter\\(k=>k.includes\\('job'\\)||k.includes\\('scan'\\)\\).sort\\(\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(curl -s \"http://localhost:5000/swagger/v1/swagger.json\" -o \"C:/Users/willc/swagger.json\")",
+      "Bash(node -e \"const p=JSON.parse\\(require\\('fs'\\).readFileSync\\('C:/Users/willc/swagger.json','utf8'\\)\\).paths; console.log\\(Object.keys\\(p\\).filter\\(k=>k.includes\\('job'\\)||k.includes\\('scan'\\)\\).sort\\(\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(curl -sv \"http://localhost:5000/swagger/v1/swagger.json\")",
+      "Bash(curl:*)",
+      "Bash(echo \"PID: $!\")",
+      "Bash(tasklist:*)",
+      "Bash(npx tsc:*)",
+      "Bash(xargs grep:*)",
+      "Bash(npm run:*)",
+      "Bash(echo \"Web PID: $!\")",
+      "Bash(dotnet nuget locals:*)",
+      "Bash(dotnet restore:*)",
+      "Bash(echo \"API PID: $!\")",
+      "Bash(powershell.exe:*)",
+      "Bash(cmd /c \"npx tsc --noEmit 2>&1\")",
+      "Bash(python -c \"import json,sys; titles=[t for t in json.load\\(sys.stdin\\) if 'medal' in t['name'].lower\\(\\) or 'allied' in t['name'].lower\\(\\)]; print\\(json.dumps\\([{'id':t['id'],'name':t['name']} for t in titles], indent=2\\)\\)\")",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); v=d.get\\('title',{}\\); print\\('processingState:', v.get\\('processingState'\\)\\); print\\('packageId:', v.get\\('id'\\)\\)\")",
+      "Bash(python -c \"import json,sys; v=json.load\\(sys.stdin\\)['versions'][0]; print\\('processingState:', v['processingState']\\); print\\('normalizedAssetRootPath:', v['normalizedAssetRootPath']\\); print\\('installScriptPath:', v['installScriptPath']\\)\")",
+      "Bash(python -c \"import json,sys; titles=[t for t in json.load\\(sys.stdin\\) if 'motocross' in t['name'].lower\\(\\)]; print\\(json.dumps\\([{'id':t['id'],'name':t['name']} for t in titles], indent=2\\)\\)\")",
+      "Bash(python -c \"import json,sys; v=json.load\\(sys.stdin\\)['versions'][0]; print\\('processingState:', v['processingState']\\)\")",
+      "Bash(python -c \"import json,sys; v=json.load\\(sys.stdin\\)['versions'][0]; print\\('processingState:', v['processingState']\\); print\\('normalizedAssetRootPath:', v['normalizedAssetRootPath']\\)\")",
+      "Bash(powershell -Command \"& .\\\\stop-local.ps1\")",
+      "Bash(powershell -ExecutionPolicy Bypass -File \"scripts\\\\stop-local.ps1\")",
+      "Bash(powershell -ExecutionPolicy Bypass -File \"scripts\\\\start-local.ps1\")",
+      "Bash(Start-Sleep 8)"
+    ]
+  }
+}

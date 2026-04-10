@@ -1,0 +1,45 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamarr.Domain", "src\server\Gamarr.Domain\Gamarr.Domain.csproj", "{8B6C4E62-33C5-4E22-8C58-95E57132C6B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamarr.Application", "src\server\Gamarr.Application\Gamarr.Application.csproj", "{2A32695D-A452-4C70-B69B-D65C60465763}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamarr.Infrastructure", "src\server\Gamarr.Infrastructure\Gamarr.Infrastructure.csproj", "{3D41789E-C4B8-4832-9F10-B96295FF69AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamarr.Api", "src\server\Gamarr.Api\Gamarr.Api.csproj", "{D7815E6B-8350-495A-B3DA-254C0FB09661}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gamarr.Agent", "src\agent\Gamarr.Agent\Gamarr.Agent.csproj", "{D1CCB8EE-DBE0-4D77-962B-45A8766EEA3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B6C4E62-33C5-4E22-8C58-95E57132C6B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B6C4E62-33C5-4E22-8C58-95E57132C6B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B6C4E62-33C5-4E22-8C58-95E57132C6B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B6C4E62-33C5-4E22-8C58-95E57132C6B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A32695D-A452-4C70-B69B-D65C60465763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A32695D-A452-4C70-B69B-D65C60465763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A32695D-A452-4C70-B69B-D65C60465763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A32695D-A452-4C70-B69B-D65C60465763}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D41789E-C4B8-4832-9F10-B96295FF69AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D41789E-C4B8-4832-9F10-B96295FF69AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D41789E-C4B8-4832-9F10-B96295FF69AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D41789E-C4B8-4832-9F10-B96295FF69AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7815E6B-8350-495A-B3DA-254C0FB09661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7815E6B-8350-495A-B3DA-254C0FB09661}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7815E6B-8350-495A-B3DA-254C0FB09661}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7815E6B-8350-495A-B3DA-254C0FB09661}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1CCB8EE-DBE0-4D77-962B-45A8766EEA3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1CCB8EE-DBE0-4D77-962B-45A8766EEA3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1CCB8EE-DBE0-4D77-962B-45A8766EEA3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1CCB8EE-DBE0-4D77-962B-45A8766EEA3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

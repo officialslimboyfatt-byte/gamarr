@@ -1,0 +1,29 @@
+bin/
+obj/
+.vs/
+.vscode/
+node_modules/
+dist/
+coverage/
+.idea/
+*.user
+*.suo
+*.db
+*.log
+.env
+.env.local
+src/web/.vite/
+src/web/dist/
+deploy/data/
+
+# .NET SDK/NuGet caches — never commit these
+.dotnet/
+.nuget/
+
+# Runtime test artifacts
+.runtime-media/
+.runtime-tests/
+.verify/
+
+# Windows reserved device name (git can't index it)
+CON

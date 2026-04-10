@@ -1,0 +1,30 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: gamarr-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: gamarr
+      POSTGRES_USER: gamarr
+      POSTGRES_PASSWORD: gamarr
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: gamarr-rabbitmq
+    restart: unless-stopped
+    environment:
+      RABBITMQ_DEFAULT_USER: gamarr
+      RABBITMQ_DEFAULT_PASS: gamarr
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+
+volumes:
+  postgres-data:
+  rabbitmq-data:

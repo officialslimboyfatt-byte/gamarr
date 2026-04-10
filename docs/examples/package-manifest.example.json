@@ -1,0 +1,42 @@
+{
+  "manifestVersion": "gamarr.package/v1",
+  "package": {
+    "slug": "half-life-demo",
+    "name": "Half-Life Demo",
+    "description": "Sample package using user-supplied local installer media.",
+    "notes": "Replace local media paths with your own content.",
+    "tags": ["fps", "classic", "demo"]
+  },
+  "version": {
+    "versionLabel": "1.0",
+    "supportedOs": "Windows 10, Windows 11",
+    "architecture": "X64",
+    "timeoutSeconds": 1800,
+    "notes": "Sample mock recipe.",
+    "scripts": {
+      "install": {
+        "kind": "MockRecipe",
+        "path": "C:\\GamarrMedia\\HalfLifeDemo\\install.mock"
+      }
+    },
+    "media": [
+      {
+        "type": "Iso",
+        "label": "Game ISO",
+        "path": "C:\\GamarrMedia\\HalfLifeDemo\\half-life-demo.iso"
+      }
+    ],
+    "detectionRules": [
+      {
+        "ruleType": "FileExists",
+        "value": "%MOCK_INSTALL_ROOT%\\installed\\hl.exe"
+      }
+    ],
+    "prerequisites": [
+      {
+        "name": ".NET Framework 4.8",
+        "notes": "Only needed for legacy tooling in this sample."
+      }
+    ]
+  }
+}
